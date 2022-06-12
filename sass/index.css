@@ -1,0 +1,184 @@
+/*body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header > nav {
+    display: flex;
+    flex-basis: 50%;
+}
+header > a > img {
+    height: 100px;
+}
+header > nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+header nav ul li {
+    list-style: none;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    align-items: center;
+    height: 600px;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+main > div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    justify-content: center;
+}
+main > div:nth-child(3) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 45%;
+    row-gap: 10px;
+    justify-content: flex-start;
+
+}
+main > div:first-child > div {
+    display: flex;
+}
+main > div:first-child > div >img {
+    object-fit: cover;
+    width: 100%;
+}
+main > div:nth-child(3) > h1 {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    color: #18534F;
+}
+main > div:nth-child(3) > h1 > span {
+    font-weight: 300;
+    color: black;
+    font-style: italic;
+    padding-right: 10px;
+}
+main > div:nth-child(3) > p:nth-child(2) {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 300;
+    color: black;
+}
+main > div:nth-child(3) > p:nth-of-type(2) {
+ color: black;
+ text-align: center;
+ font-size: 100;
+ font-size: 1.3em;
+
+}
+main > div:first-child > div {
+    margin-top: 50px;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-color: #feeaa13f;
+    border-radius: 50%;
+    box-shadow: -5px 2px 34px 16px rgba(129, 129, 129, 0.33);
+}
+
+
+main > div:first-child > div > img {
+    object-fit: cover;
+    flex-basis: 100%;
+    object-position: 20% 10%;
+    width: 300px;
+
+
+} 
+main > div:nth-child(3) > button {
+    padding: 10px 20px;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+main > div:nth-child(3) > button:hover {
+    background-color: #FEEAA1;
+}
+main > div:nth-of-type(2) {
+    flex-basis: 65%;
+    height: 650px;
+
+    border-radius: 20px;
+}
+#about, #project {
+    margin-top: 100px;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+#about > h2, #project > h2 {
+    font-weight: 500;
+    flex-basis: 100%;
+    font-size: 2.1em;
+    color: #18534F;
+    text-transform: uppercase;
+    position: relative;
+    top: 57px;
+}
+#about > h2 > span {
+    padding-right: 3px;
+
+}
+#about > p, #project > p {
+    flex-basis: 45%;
+    text-align: justify;
+    border-top: solid 5px #d6945b46;
+    padding-top: 30px;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+.sub-title {
+    font-size: 1.5em;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+#about > div {
+    display: flex;
+    flex-basis: 40%;
+    border: 2px solid black;
+    position: relative;
+    border-radius: 15px;
+}
+#about > div > img {
+    position: absolute; 
+    top: 30px;
+    left: 30px;
+    height: fit-content;
+    object-fit: cover;
+    flex-basis: 100%;
+    width: 100%;
+    height: 100%;
+    box-shadow: -5px 2px 34px 16px rgba(129,129,129,0.31);
+    border-radius: 15px;
+} */
+
+/*# sourceMappingURL=index.css.map */
