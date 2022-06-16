@@ -253,6 +253,7 @@ main {
     flex-basis: 100%;
     background-color: #303030;
     padding: 20px;
+    
     h2 {
         display: flex;
         flex-basis: 100%;
@@ -295,14 +296,25 @@ main {
     }
 }
 #experience {
+    position: relative;
     background-color: rgba(39,204,141,1);
     padding: 30px 20px;
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
     color: whitesmoke;
+    #title-exp {
+        border-radius: 5px;
+        position: absolute;
+        top: -25px;
+        left: 11%;
+        background-color: black;
+        font-size: 1em;
+        padding: 10px;
+        border: solid 5px rgba(39,204,141,1);
+    }
     .exp-sub-title {
-        font-size: 1.2em;
+        font-size: 1.5em;
         display: flex;
         font-weight: 600;
         flex-basis: 100%;
