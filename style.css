@@ -78,6 +78,7 @@ main #presentation > div > img {
   object-fit: cover;
   border-radius: 50%;
   object-position: 10% 20%;
+  border: solid 5px rgb(39, 204, 141);
 }
 main #presentation > h1 {
   color: rgb(39, 204, 141);
