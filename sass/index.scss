@@ -68,6 +68,7 @@ main {
         justify-content: start;
         padding: 20px 0;
         letter-spacing: 0.1em;
+        flex-basis: 100%;
         > div {
             display: flex;
             flex-basis: 100%;
@@ -105,13 +106,40 @@ main {
             text-align: center;
         }
         .alternance {
+            flex-basis: 100%;
             padding: 0;
             margin: 0;
-            flex-basis: 75%;
             font-size: 2em;
             font-weight: 600;
             line-height: 0.9em;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.01em;
+            padding: 0 20px;
+            
+            .underline-green:first-child {
+                position: relative;
+                &::before{
+                    content: " ";
+                    border-bottom: solid 10px rgba(39,204,141,1);
+                    padding-bottom: 5px;
+                    position: absolute;
+                    width: 210px;
+                    top: 49px;
+                    right: 10px;
+                }
+            }
+            .underline-green:nth-child(2) {
+                position: relative;
+                &::before{
+                    content: " ";
+                    border-bottom: solid 9px rgba(39,204,141,1);
+                    padding-bottom: 5px;
+                    position: absolute;
+                    width: 230px;
+                    top: 19px;
+                    right: 30px;
+                    z-index: -1;
+                }
+            }
            
         }
         .age {
@@ -141,7 +169,7 @@ main {
     flex-wrap: wrap;
     flex-basis: 100%;
     padding: 20px 20px;
-    background-color: #dad9d9;
+    background-color: whitesmoke;
     column-gap: 50px;
     > div {
         display: flex;
