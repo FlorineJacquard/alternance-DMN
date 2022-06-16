@@ -67,7 +67,7 @@ main #presentation {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 20px 20px;
 }
 main #presentation > div > img {
   width: 200px;
@@ -98,8 +98,10 @@ main #presentation .licence {
   text-align: center;
 }
 main #presentation .alternance, main #presentation .age {
+  padding: 0;
+  margin: 0;
   flex-basis: 75%;
-  font-size: 1.3em;
+  font-size: 1.9em;
   text-align: center;
   font-weight: 600;
   font-style: italic;
