@@ -13,7 +13,7 @@ header {
   display: flex;
   padding: 10px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 header > div:first-child {
@@ -80,11 +80,6 @@ main #presentation .licence {
   flex-basis: 100%;
   text-align: center;
 }
-main #presentation .licence i {
-  font-size: 20px;
-  padding-right: 10px;
-  color: #226D68;
-}
 main #presentation .alternance, main #presentation .age {
   flex-basis: 75%;
   font-size: 1.3em;
@@ -99,62 +94,25 @@ main #presentation .alternance, main #presentation .age {
   flex-basis: 100%;
   padding: 20px 20px;
   background-color: #dad9d9;
+  column-gap: 50px;
 }
 #call-to-action > div {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 #call-to-action > div > p {
-  font-weight: 400;
-  font-size: 0.6em;
-}
-#call-to-action > div > p span {
   font-weight: 700;
   font-size: 1em;
+  color: black;
 }
-#call-to-action > div > i {
-  padding-right: 10px;
-  color: #226D68;
+#call-to-action > div > p > i {
+  margin-right: 10px;
+  color: rgb(39, 204, 141);
 }
-#call-to-action #localisations > div {
-  display: flex;
-  flex-basis: 100%;
-}
-#call-to-action #localisations > div article {
-  flex-basis: 20%;
-  position: relative;
-}
-#call-to-action #localisations > div article figure > img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-#call-to-action #localisations > div article > h4 {
-  color: white;
-  font-size: 0.6em;
-  font-weight: 800;
-  position: absolute;
-  top: 25%;
-  left: 35%;
-}
-#call-to-action .price {
-  margin-top: 30px;
-  display: flex;
-  flex-basis: 100%;
-  column-gap: 15px;
-}
-#call-to-action .price > div:nth-child(2) {
-  font-size: 0.8em;
-  font-weight: 600;
-}
-#call-to-action .price > div:nth-child(3) {
-  margin: 20px auto;
-  padding: 10px;
-  border: 1px solid black;
-  font-weight: 900;
-  font-size: 0.7em;
-  border-radius: 10px;
+#call-to-action > div > p span {
+  font-weight: 500;
+  font-size: 1em;
+  font-style: italic;
 }
 
 #about {
