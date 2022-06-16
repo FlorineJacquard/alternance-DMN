@@ -66,8 +66,14 @@ main {
 main #presentation {
   display: flex;
   flex-wrap: wrap;
+  justify-content: start;
+  padding: 20px 0;
+  letter-spacing: 0.1em;
+}
+main #presentation > div {
+  display: flex;
+  flex-basis: 100%;
   justify-content: center;
-  padding: 20px 20px;
 }
 main #presentation > div > img {
   width: 200px;
@@ -76,20 +82,23 @@ main #presentation > div > img {
   border-radius: 50%;
   object-position: 10% 20%;
   border: solid 5px rgb(39, 204, 141);
-  box-shadow: 30px 30px 28px 21px rgba(39, 204, 141, 0.034);
+  box-shadow: 30px 30px 28px 21px rgba(39, 204, 141, 0.075);
 }
 main #presentation > h1 {
   color: rgb(39, 204, 141);
-  font-size: 2.1em;
+  font-size: 2.8em;
   flex-basis: 100%;
-  text-align: center;
   font-weight: 700;
   margin: 0;
+  font-style: italic;
+  letter-spacing: -0.1em;
 }
 main #presentation > h1 span {
-  font-weight: 400;
-  font-style: italic;
-  padding-right: 10px;
+  font-weight: 200;
+  font-style: normal;
+  margin-right: 15px;
+  font-size: 1.2em;
+  letter-spacing: -0.1em;
 }
 main #presentation .licence {
   font-size: 1.3em;
@@ -97,14 +106,19 @@ main #presentation .licence {
   flex-basis: 100%;
   text-align: center;
 }
-main #presentation .alternance, main #presentation .age {
+main #presentation .alternance {
   padding: 0;
   margin: 0;
   flex-basis: 75%;
-  font-size: 1.9em;
-  text-align: center;
+  font-size: 2em;
   font-weight: 600;
-  font-style: italic;
+  line-height: 0.9em;
+  letter-spacing: 0.1em;
+}
+main #presentation .age {
+  font-size: 2em;
+  margin: 0;
+  letter-spacing: 0.3em;
 }
 
 #alternance {

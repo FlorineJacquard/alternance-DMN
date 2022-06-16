@@ -65,8 +65,14 @@ main {
     #presentation {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px 20px;
+        justify-content: start;
+        padding: 20px 0;
+        letter-spacing: 0.1em;
+        > div {
+            display: flex;
+            flex-basis: 100%;
+            justify-content: center;
+        }
         > div >img {
             width: 200px;
             height: 200px;
@@ -74,19 +80,22 @@ main {
             border-radius: 50%;
             object-position: 10% 20%;
             border: solid 5px rgba(39,204,141,1);
-            box-shadow: 30px 30px 28px 21px rgba(39, 204, 141, 0.034);
+            box-shadow: 30px 30px 28px 21px rgba(39, 204, 141, 0.075);
         }  
         > h1 {
             color: rgba(39,204,141,1);
-            font-size: 2.1em;
+            font-size: 2.8em;
             flex-basis: 100%;
-            text-align: center;
             font-weight: 700;
             margin : 0; 
+            font-style: italic;
+            letter-spacing: -0.1em;
             span {
-                font-weight: 400;
-                font-style: italic;
-                padding-right: 10px;
+                font-weight: 200;
+                font-style: normal;
+                margin-right: 15px;
+                font-size: 1.2em;
+                letter-spacing: -0.1em;
             }
         }
         .licence {
@@ -95,14 +104,20 @@ main {
             flex-basis: 100%;
             text-align: center;
         }
-        .alternance, .age {
+        .alternance {
             padding: 0;
             margin: 0;
             flex-basis: 75%;
-            font-size: 1.9em;
-            text-align: center;
+            font-size: 2em;
             font-weight: 600;
-            font-style: italic;;
+            line-height: 0.9em;
+            letter-spacing: 0.1em;
+           
+        }
+        .age {
+            font-size: 2em;
+            margin: 0;
+            letter-spacing: 0.3em;
         }
        
     }
