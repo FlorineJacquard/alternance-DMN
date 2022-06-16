@@ -63,12 +63,14 @@ main {
     flex-wrap: wrap;
 
     #presentation {
+
         display: flex;
         flex-wrap: wrap;
         justify-content: start;
         padding: 20px 0;
         letter-spacing: 0.1em;
         flex-basis: 100%;
+        
         > div {
             display: flex;
             flex-basis: 100%;
@@ -170,8 +172,26 @@ main {
     flex-wrap: wrap;
     flex-basis: 100%;
     padding: 20px 20px;
-    background-color: whitesmoke;
+    background-color: white;
     column-gap: 50px;
+    position: relative;
+    margin-top: 30px;
+
+    #cost-company {
+        color: #27CC8D;
+        font-weight: 700;
+        font-size: 2em;
+    }
+    #title-want {
+        border-radius: 5px;
+        position: absolute;
+        top: -50px;
+        left: 25%;
+        background-color: black;
+        font-size: 1em;
+        padding: 10px;
+        border: solid 5px rgba(39,204,141,1);
+    }
     > div {
         display: flex;
         flex-wrap: wrap;

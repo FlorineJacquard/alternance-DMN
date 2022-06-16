@@ -169,8 +169,25 @@ main #presentation .age {
   flex-wrap: wrap;
   flex-basis: 100%;
   padding: 20px 20px;
-  background-color: whitesmoke;
+  background-color: white;
   column-gap: 50px;
+  position: relative;
+  margin-top: 30px;
+}
+#call-to-action #cost-company {
+  color: #27CC8D;
+  font-weight: 700;
+  font-size: 2em;
+}
+#call-to-action #title-want {
+  border-radius: 5px;
+  position: absolute;
+  top: -50px;
+  left: 25%;
+  background-color: black;
+  font-size: 1em;
+  padding: 10px;
+  border: solid 5px rgb(39, 204, 141);
 }
 #call-to-action > div {
   display: flex;
