@@ -124,6 +124,7 @@ main #presentation .alternance .underline-green:first-child::before {
   content: " ";
   border-bottom: solid 10px rgb(39, 204, 141);
   padding-bottom: 5px;
+  z-index: -1;
   position: absolute;
   width: 210px;
   top: 49px;
@@ -139,7 +140,7 @@ main #presentation .alternance .underline-green:nth-child(2)::before {
   position: absolute;
   width: 230px;
   top: 19px;
-  right: 30px;
+  right: 25px;
   z-index: -1;
 }
 main #presentation .age {
