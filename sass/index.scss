@@ -34,16 +34,11 @@ header {
     align-items: center;
     > div:first-child {
         font-weight: 600;
-        font-size: 1.5em;
-    }
-    > a {
-        img {
-            height: 50px;
-        }
+        font-size: 1.3em;
     }
     nav {
         display: flex;
-        flex-basis: 50%;
+        flex-basis: 60%;
         ul {
             display: flex;
             flex-basis: 100%;
@@ -55,8 +50,8 @@ header {
                     text-decoration: none;
                     color: black;
                     text-transform: uppercase;
-                    font-weight: 700;
-                    font-size: 0.9em;
+                    font-weight: 800;
+                    font-size: 0.8em;
                 }
             }
         }
@@ -110,6 +105,7 @@ main {
     }
 }
 #call-to-action {
+    border-top: solid 4px #27CC8D;
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
@@ -140,6 +136,7 @@ main {
   
 }
 #about {
+    border-top: solid 4px #303030;
     padding: 30px 20px;
     display: flex;
     flex-wrap: wrap;

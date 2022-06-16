@@ -36,14 +36,11 @@ header {
 }
 header > div:first-child {
   font-weight: 600;
-  font-size: 1.5em;
-}
-header > a img {
-  height: 50px;
+  font-size: 1.3em;
 }
 header nav {
   display: flex;
-  flex-basis: 50%;
+  flex-basis: 60%;
 }
 header nav ul {
   display: flex;
@@ -58,8 +55,8 @@ header nav ul li a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.9em;
+  font-weight: 800;
+  font-size: 0.8em;
 }
 
 main {
@@ -108,6 +105,7 @@ main #presentation .alternance, main #presentation .age {
 }
 
 #call-to-action {
+  border-top: solid 4px #27CC8D;
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100%;
@@ -135,6 +133,7 @@ main #presentation .alternance, main #presentation .age {
 }
 
 #about {
+  border-top: solid 4px #303030;
   padding: 30px 20px;
   display: flex;
   flex-wrap: wrap;
