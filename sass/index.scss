@@ -5,12 +5,20 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: #303030;
+    color: white;
 }
 header {
+    background-color: rgba(39,204,141,1);
     display: flex;
     padding: 10px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    > div:first-child {
+        font-weight: 600;
+        font-size: 1.5em;
+    }
     > a {
         img {
             height: 50px;
@@ -19,8 +27,6 @@ header {
     nav {
         display: flex;
         flex-basis: 50%;
-        position: relative;
-        bottom: 10px;
         ul {
             display: flex;
             flex-basis: 100%;
@@ -32,8 +38,8 @@ header {
                     text-decoration: none;
                     color: black;
                     text-transform: uppercase;
-                    font-weight: 300;
-                    font-size: 0.7em;
+                    font-weight: 700;
+                    font-size: 0.9em;
                 }
             }
         }
@@ -48,29 +54,29 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 10px 20px;
+        padding: 40px 20px;
         > div >img {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             border-radius: 50%;
             object-position: 10% 20%;
         }  
         > h1 {
-            color: #18534F;
-            font-size: 1em;
+            color: rgba(39,204,141,1);
+            font-size: 1.5em;
             flex-basis: 100%;
             text-align: center;
-            font-weight: 400;
+            font-weight: 700;
             margin : 0; 
             span {
-                font-weight: 200;
+                font-weight: 400;
                 font-style: italic;
                 padding-right: 10px;
             }
         }
         .licence {
-            font-size: 0.8em;
+            font-size: 1.3em;
             margin: 0;
             flex-basis: 100%;
             text-align: center;
@@ -80,10 +86,12 @@ main {
                 color: #226D68;
             }
         }
-        .alternance {
-            flex-basis: 55%;
-            font-size: 0.7em;
+        .alternance, .age {
+            flex-basis: 75%;
+            font-size: 1.3em;
             text-align: center;
+            font-weight: 600;
+            font-style: italic;;
         }
        
     }
@@ -93,6 +101,7 @@ main {
     flex-wrap: wrap;
     flex-basis: 100%;
     padding: 20px 20px;
+    background-color: rgba(39,204,141,1);
     > div {
         display: flex;
         flex-wrap: wrap;
@@ -166,7 +175,6 @@ main {
         margin: 0;
         span {
             padding-right: 5px;
-            border-bottom: solid 2px #FEEAA1;
         }
     }
     p {
@@ -197,7 +205,6 @@ main {
         margin: 0;
         span {
             padding-right: 5px;
-            border-bottom: solid 2px #FEEAA1;
         }
     }
     p {
@@ -231,11 +238,17 @@ main {
     }
 }
 #experience {
+    background-color: #303030;
     padding: 30px 20px;
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
-    background-color: #ECF8F6;
+    color: whitesmoke;
+    .exp-sub-title {
+        display: flex;
+        font-weight: 500;
+        flex-basis: 100%;
+    }
     h2 {
         font-size: 1.3em;
         display: flex;
@@ -244,7 +257,6 @@ main {
         margin: 0;
         span {
             padding-right: 5px;
-            border-bottom: solid 2px #FEEAA1;
         }
     }
     h3 {

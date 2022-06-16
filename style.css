@@ -4,13 +4,21 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  background-color: #303030;
+  color: white;
 }
 
 header {
+  background-color: rgb(39, 204, 141);
   display: flex;
   padding: 10px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+}
+header > div:first-child {
+  font-weight: 600;
+  font-size: 1.5em;
 }
 header > a img {
   height: 50px;
@@ -18,8 +26,6 @@ header > a img {
 header nav {
   display: flex;
   flex-basis: 50%;
-  position: relative;
-  bottom: 10px;
 }
 header nav ul {
   display: flex;
@@ -34,8 +40,8 @@ header nav ul li a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  font-weight: 300;
-  font-size: 0.7em;
+  font-weight: 700;
+  font-size: 0.9em;
 }
 
 main {
@@ -46,30 +52,30 @@ main #presentation {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 10px 20px;
+  padding: 40px 20px;
 }
 main #presentation > div > img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
   object-position: 10% 20%;
 }
 main #presentation > h1 {
-  color: #18534F;
-  font-size: 1em;
+  color: rgb(39, 204, 141);
+  font-size: 1.5em;
   flex-basis: 100%;
   text-align: center;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
 }
 main #presentation > h1 span {
-  font-weight: 200;
+  font-weight: 400;
   font-style: italic;
   padding-right: 10px;
 }
 main #presentation .licence {
-  font-size: 0.8em;
+  font-size: 1.3em;
   margin: 0;
   flex-basis: 100%;
   text-align: center;
@@ -79,10 +85,12 @@ main #presentation .licence i {
   padding-right: 10px;
   color: #226D68;
 }
-main #presentation .alternance {
-  flex-basis: 55%;
-  font-size: 0.7em;
+main #presentation .alternance, main #presentation .age {
+  flex-basis: 75%;
+  font-size: 1.3em;
   text-align: center;
+  font-weight: 600;
+  font-style: italic;
 }
 
 #call-to-action {
@@ -90,6 +98,7 @@ main #presentation .alternance {
   flex-wrap: wrap;
   flex-basis: 100%;
   padding: 20px 20px;
+  background-color: rgb(39, 204, 141);
 }
 #call-to-action > div {
   display: flex;
@@ -163,7 +172,6 @@ main #presentation .alternance {
 }
 #about h2 span {
   padding-right: 5px;
-  border-bottom: solid 2px #FEEAA1;
 }
 #about p {
   font-size: 0.8em;
@@ -195,7 +203,6 @@ main #presentation .alternance {
 }
 #project h2 span {
   padding-right: 5px;
-  border-bottom: solid 2px #FEEAA1;
 }
 #project p {
   font-size: 0.8em;
@@ -228,11 +235,17 @@ main #presentation .alternance {
 }
 
 #experience {
+  background-color: #303030;
   padding: 30px 20px;
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100%;
-  background-color: #ECF8F6;
+  color: whitesmoke;
+}
+#experience .exp-sub-title {
+  display: flex;
+  font-weight: 500;
+  flex-basis: 100%;
 }
 #experience h2 {
   font-size: 1.3em;
@@ -243,7 +256,6 @@ main #presentation .alternance {
 }
 #experience h2 span {
   padding-right: 5px;
-  border-bottom: solid 2px #FEEAA1;
 }
 #experience h3 {
   font-size: 1em;
