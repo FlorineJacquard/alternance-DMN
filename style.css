@@ -483,5 +483,10 @@ footer ul li i {
     flex-basis: 100%;
   }
 }
+@media screen and (min-width: 1000px) {
+  #contact-me {
+    right: 20%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
