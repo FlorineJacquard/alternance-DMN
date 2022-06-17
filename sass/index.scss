@@ -32,7 +32,11 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    > div:first-child {
+     > div {
+        flex-basis: 100%;
+        display: flex;
+    }
+    div > div:first-child {
         font-weight: 600;
         font-size: 1.3em;
     }
@@ -271,7 +275,7 @@ main {
     .short {
         font-size: 1.5em;
     }
-    > div {
+    > div > div {
         display: flex;
         flex-basis: 100%;
         flex-wrap: wrap;
@@ -372,6 +376,123 @@ footer {
             i {
                 font-size: 2em;
             }
+        }
+    }
+}
+@media screen and (min-width: 600px) {
+    body {
+         background-color: white;
+         color: black;
+    }
+    header {
+        >div {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
+    #contact-me {
+        top: 20px;
+        right: 5%;
+        width: 25%;
+    }
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        #presentation {
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+            > div:first-child {
+                flex-basis: 30%;
+            }
+            h1 {
+                flex-basis: 50%;
+            }
+            .licence {
+                flex-basis: 30%;
+                padding-top: 20px;
+            }
+            .alternance {
+                flex-basis: 40%;
+                .underline-green:first-child::before {
+                    width: 250px !important;
+                    left: 0px !important;
+                }
+                .underline-green:nth-child(2)::before {
+                    width: 420px;
+                }
+            }
+            
+        }
+        #alternance {
+            flex-basis: 30%;
+            margin: 50px auto;
+        }
+        #call-to-action {
+            border-radius: 10px;
+            border: solid 5px #27CC8D;
+            margin-bottom: 20px;
+            #title-want {
+                color: white;
+                left: 42%;
+            }
+            #cost-company {
+                flex-basis: 100%;
+            }
+        }
+        
+    }
+    #about {
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        border: none;
+        > h2 {
+            flex-basis: 100% !important;
+        }
+        #about-txt {
+            display: flex;
+            width: 47% !important;
+        }
+        .image-part-container {
+            flex-basis: 47% !important;
+            img {
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+        
+    }
+    #project {
+        display: flex;
+        background-color: white;
+        justify-content: space-between;
+        > h2 {
+            flex-basis: 100%;
+        }
+         #wish {
+            flex-basis:  47% !important;
+        }
+        #infn-container {
+            flex-basis: 47%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #experience {
+        flex-direction: row;
+        border-radius:  10px;
+        #title-exp {
+            left: 37%;
+        }
+        > article {
+            flex-basis: 100%;
         }
     }
 }

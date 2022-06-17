@@ -34,7 +34,11 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-header > div:first-child {
+header > div {
+  flex-basis: 100%;
+  display: flex;
+}
+header div > div:first-child {
   font-weight: 600;
   font-size: 1.3em;
 }
@@ -265,12 +269,12 @@ main #presentation .age {
 #project .short {
   font-size: 1.5em;
 }
-#project > div {
+#project > div > div {
   display: flex;
   flex-basis: 100%;
   flex-wrap: wrap;
 }
-#project > div > img {
+#project > div > div > img {
   width: 100%;
   border-radius: 2px;
 }
@@ -366,6 +370,118 @@ footer ul li a {
 }
 footer ul li i {
   font-size: 2em;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: white;
+    color: black;
+  }
+  header > div {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #contact-me {
+    top: 20px;
+    right: 5%;
+    width: 25%;
+  }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  main #presentation {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  main #presentation > div:first-child {
+    flex-basis: 30%;
+  }
+  main #presentation h1 {
+    flex-basis: 50%;
+  }
+  main #presentation .licence {
+    flex-basis: 30%;
+    padding-top: 20px;
+  }
+  main #presentation .alternance {
+    flex-basis: 40%;
+  }
+  main #presentation .alternance .underline-green:first-child::before {
+    width: 250px !important;
+    left: 0px !important;
+  }
+  main #presentation .alternance .underline-green:nth-child(2)::before {
+    width: 420px;
+  }
+  main #alternance {
+    flex-basis: 30%;
+    margin: 50px auto;
+  }
+  main #call-to-action {
+    border-radius: 10px;
+    border: solid 5px #27CC8D;
+    margin-bottom: 20px;
+  }
+  main #call-to-action #title-want {
+    color: white;
+    left: 42%;
+  }
+  main #call-to-action #cost-company {
+    flex-basis: 100%;
+  }
+  #about {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: none;
+  }
+  #about > h2 {
+    flex-basis: 100% !important;
+  }
+  #about #about-txt {
+    display: flex;
+    width: 47% !important;
+  }
+  #about .image-part-container {
+    flex-basis: 47% !important;
+  }
+  #about .image-part-container img {
+    height: 300px;
+    object-fit: cover;
+  }
+  #project {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+  }
+  #project > h2 {
+    flex-basis: 100%;
+  }
+  #project #wish {
+    flex-basis: 47% !important;
+  }
+  #project #infn-container {
+    flex-basis: 47%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #experience {
+    flex-direction: row;
+    border-radius: 10px;
+  }
+  #experience #title-exp {
+    left: 37%;
+  }
+  #experience > article {
+    flex-basis: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
