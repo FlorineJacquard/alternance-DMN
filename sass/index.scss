@@ -180,7 +180,11 @@ main {
     column-gap: 50px;
     position: relative;
     margin-top: 30px;
-
+    .aides {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 40px;
+    }
     #cost-company {
         color: #27CC8D;
         font-weight: 700;
@@ -257,7 +261,10 @@ main {
     flex-basis: 100%;
     background-color: #303030;
     padding: 20px;
-    
+    .short-long {
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
     h2 {
         display: flex;
         flex-basis: 100%;
@@ -268,6 +275,7 @@ main {
         }
     }
     p {
+
         font-size: 1em;
         text-align: justify;
         padding-bottom: 15px;
@@ -300,6 +308,7 @@ main {
     }
 }
 #experience {
+
     position: relative;
     background-color: rgba(39,204,141,1);
     padding: 30px 20px;
@@ -466,19 +475,37 @@ footer {
         
     }
     #project {
+        row-gap: 50px;
         display: flex;
         background-color: white;
         justify-content: space-between;
         > h2 {
             flex-basis: 100%;
         }
-         #wish {
+         #wish, #wish-3 {
             flex-basis:  47% !important;
+        }
+        > h4 {
+            display: flex;
+            flex-basis: 50%;
         }
         #infn-container {
             flex-basis: 47%;
             display: flex;
             flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        #wish-2 {
+            display: flex;
+            flex-basis: 48%;
+        }
+    }
+    #experience {
+        margin-top: 50px;
+        background-color:  white;
+        color: black;
+        #title-exp {
+            color:  white;
         }
     }
     footer {

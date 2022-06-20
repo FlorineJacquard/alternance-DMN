@@ -178,6 +178,11 @@ main #presentation .age {
   position: relative;
   margin-top: 30px;
 }
+#call-to-action .aides {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+}
 #call-to-action #cost-company {
   color: #27CC8D;
   font-weight: 700;
@@ -251,6 +256,10 @@ main #presentation .age {
   flex-basis: 100%;
   background-color: #303030;
   padding: 20px;
+}
+#project .short-long {
+  font-weight: 700;
+  padding-bottom: 10px;
 }
 #project h2 {
   display: flex;
@@ -453,6 +462,7 @@ footer ul li i {
     object-fit: cover;
   }
   #project {
+    row-gap: 50px;
     display: flex;
     background-color: white;
     justify-content: space-between;
@@ -460,13 +470,30 @@ footer ul li i {
   #project > h2 {
     flex-basis: 100%;
   }
-  #project #wish {
+  #project #wish, #project #wish-3 {
     flex-basis: 47% !important;
+  }
+  #project > h4 {
+    display: flex;
+    flex-basis: 50%;
   }
   #project #infn-container {
     flex-basis: 47%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  #project #wish-2 {
+    display: flex;
+    flex-basis: 48%;
+  }
+  #experience {
+    margin-top: 50px;
+    background-color: white;
+    color: black;
+  }
+  #experience #title-exp {
+    color: white;
   }
   footer {
     max-width: 1200px;
