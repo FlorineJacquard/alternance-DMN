@@ -25,6 +25,15 @@ body{
     text-decoration: none;
     border: solid 3px rgba(39,204,141,1);
 }
+#cost-contract {
+    padding: 20px;
+    div > p {
+        font-weight: 600;
+        span {
+            font-weight: 300;
+        }
+    }
+}
 header {
     background-color: rgba(39,204,141,1);
     display: flex;
@@ -316,6 +325,12 @@ main {
     flex-wrap: wrap;
     flex-basis: 100%;
     color: whitesmoke;
+    justify-content: space-between;
+    > section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 29%;
+    }
     #title-exp {
         border-radius: 5px;
         position: absolute;
@@ -383,6 +398,10 @@ footer {
                 text-decoration: none;
             }
             i {
+                font-size: 1em;
+                margin-right: 10px;
+            }
+            .fa-brands {
                 font-size: 2em;
             }
         }
